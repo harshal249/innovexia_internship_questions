@@ -1,0 +1,30 @@
+
+function countMaxChocolate(money, price, wrap)
+{
+	
+
+	if (money < price)
+		return 0;
+
+
+	let chocolate = parseInt(money / price, 10);
+
+
+	chocolate = chocolate + parseInt((chocolate - 1) /
+						(wrappers - 1), 10);
+	return chocolate;
+}
+
+
+let money = prompt("Enter the total amount : ");
+
+// Price of each chocolate
+let price = 1;
+
+// No of wrappers returned
+let wrappers = 3;
+
+
+println(countMaxChocolate(money, price, wrappers));
+
+
